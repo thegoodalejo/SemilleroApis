@@ -2,7 +2,7 @@ package com.sophossolutions.pages;
 
 import java.util.Map;
 
-import com.sophossolutions.actions.ActionsDespegar;
+
 
 import io.cucumber.datatable.DataTable;
 import net.serenitybdd.rest.SerenityRest;
@@ -15,10 +15,6 @@ public class ApisHome extends PageObject{
 	private static final String CONTENT_TYPE = "application/json";
 	
 	
-	public void navegateTo(String strUrl) {
-		ActionsDespegar.navegateToUrl(getDriver(), strUrl);
-	}
-
 	public void PostNoAuth(String endPoint, DataTable userInfo) {
 		
 					
@@ -34,7 +30,7 @@ public class ApisHome extends PageObject{
 
 		SerenityRest.
 		given().contentType(CONTENT_TYPE).
-		when().body(body).post("https://reqres.in/api/register").
+		when().body(body).post(endPoint).
 		then().assertThat().statusCode(200);
 		SerenityRest.lastResponse().prettyPeek();
 			
