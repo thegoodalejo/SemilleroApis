@@ -45,7 +45,7 @@ public class GetPostHome {
 		System.out.println(".................");
 		System.out.println(SerenityRest.lastResponse().jsonPath().get("id").toString());
 		System.out.println(".................");
-		System.out.println(SerenityRest.lastResponse().jsonPath().get("token").toString());
+		SerenityRest.lastResponse().jsonPath().get("token");
 	}
 	
 }

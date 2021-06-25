@@ -1,5 +1,6 @@
 package com.sophossolutions.stepdefinitions;
 
+
 import com.sophossolutions.pages.GetPostHome;
 
 import io.cucumber.datatable.DataTable;
@@ -7,8 +8,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class GetPostStepDefinitions {
 
+public class GetPostStepDefinitions {
+	
+
+	
+	
 	@Given("Quiero relizar un registro en la api {string}")
 	public void quieroRelizarUnRegistroEnLaApi(String string) {
 		GetPostHome.pasarUrl(string);
@@ -16,7 +21,7 @@ public class GetPostStepDefinitions {
 
 	@When("Envio la informacion del usuario para el endpoint {string}")
 	public void envioLaInformacionDelUsuarioParaElEndpoint(String string, DataTable dataTable) {
-
+	    
 		GetPostHome.EjecutarPostGet(string, dataTable);
 	}
 
@@ -24,5 +29,7 @@ public class GetPostStepDefinitions {
 	public void validoQueLaRespuestaTengaStatus(Integer int1) {
 		GetPostHome.ValidarInformacion();
 	}
+
+	
 
 }

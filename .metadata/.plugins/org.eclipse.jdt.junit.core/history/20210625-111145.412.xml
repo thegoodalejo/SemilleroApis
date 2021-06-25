@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GetPost_search" project="PageObjectModelApi" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.sophossolutions.runner.GetPost_search" time="6.337">
+    <testsuite name="Registrar usuario metodo post" time="6.337">
+      <testcase name="Registrar con Post un usuario" classname="Registrar usuario metodo post" time="6.337">
+        <skipped>io.cucumber.java.PendingException: TODO: implement me&#13;
+	at com.sophossolutions.stepdefinitions.GetPostStepDefinitions.validoQueLaRespuestaTengaStatus(GetPostStepDefinitions.java:31)&#13;
+	at ✽.Valido que la respuesta tenga status 200(file:///C:/Users/santiago.espinal/Desktop/Api/PageObjectModelApi/src/test/resources/com/sophossolutions/features/GetPost.feature:12)&#13;
+&#13;
+</skipped>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
