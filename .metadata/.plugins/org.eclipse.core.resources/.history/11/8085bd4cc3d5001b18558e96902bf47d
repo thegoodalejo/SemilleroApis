@@ -1,0 +1,18 @@
+#Author: santiago.espinal@sophossolutions.com
+Feature: Agregar un producto al carrito de compras
+  Yo como automatizador quiero Agregar un producto al carrito de compras
+
+  Scenario Outline: gregar un producto al carrito de compras
+    Given El usuario se encuentra en la paguina home
+    When Agrega un producto <Producto> al carrito 
+    Then El producto aparece en el carrito
+
+#Given El usuario se encuentra en la paguina home
+#When Agrega un producto <Producto> al carrito 
+#Then El producto aparece en el carrito
+ 
+    Examples: 
+      | Producto |
+      | Neveras  |
+      | Televisores  |
+      

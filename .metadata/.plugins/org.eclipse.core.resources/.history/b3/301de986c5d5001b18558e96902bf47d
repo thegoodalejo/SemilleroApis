@@ -1,0 +1,17 @@
+package com.sophossolutions.pages;
+
+import org.openqa.selenium.By;
+
+import com.sophossolutions.actions.Action;
+
+import net.thucydides.core.pages.PageObject;
+
+public class GetPostHome extends PageObject {
+
+	
+	
+	public void AgregarElProducto(By NombrePro) {
+		Action.SelecProCarrito(getDriver(), NombrePro);
+	}
+	
+}

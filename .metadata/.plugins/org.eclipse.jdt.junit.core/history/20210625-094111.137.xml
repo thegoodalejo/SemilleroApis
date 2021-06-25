@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MercadoLibre_search" project="PageObjectModelApi" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.sophossolutions.runner.MercadoLibre_search" time="0.546">
+    <testsuite name="Registrar usuario metodo post" time="0.546">
+      <testcase name="Registrar con Post un usuario" classname="Registrar usuario metodo post" time="0.546">
+        <skipped>io.cucumber.junit.UndefinedStepException: The step "Quiero relizar un registro en la api "https://reqres.in/"" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Quiero relizar un registro en la api {string}")
+public void quieroRelizarUnRegistroEnLaApi(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+Some other steps were also undefined:
+
+@When("Envio la informacion del usuario para el endpoint {string}")
+public void envioLaInformacionDelUsuarioParaElEndpoint(String string, io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Valido que la respuesta tenga status {int}")
+public void validoQueLaRespuestaTengaStatus(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</skipped>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
