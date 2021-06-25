@@ -10,21 +10,18 @@ import io.cucumber.java.en.When;
 public class StepDefinitions {
 	
 	@Given("Quiero hacer una peticion en la api {string}")
-	public void quieroHacerUnaPeticionEnLaApi(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-		ComandosApi.ejecutarGet();
+	public void quieroHacerUnaPeticionEnLaApi(String strUrl) {
+		ComandosApi.ingresarUrl(strUrl);
 	}
 
 	@When("Envio peticion {string}")
 	public void envioPeticion(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    ComandosApi.ejecutarGet(string);
 	}
 
 	@Then("Valido la respuesta {int}")
 	public void validoLaRespuesta(Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	   ComandosApi.verificarRespuestaStatus(int1);
 	}
 
 
