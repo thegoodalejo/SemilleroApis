@@ -11,7 +11,7 @@ public class UsarApiStepDefinitions {
 	@Given("Deseo realizar un registro en la API {string}")
 	public void deseoRealizarUnRegistroEnLaAPI(String strUrl) {
 	    // Write code here that turns the phrase above into concrete actions
-	//Apis.navegateTo(strUrl);	
+	  //Apis.navegateTo(strUrl);	
 	}
 
 	@When("Enviar los datos a la API {string}")
