@@ -31,14 +31,17 @@ public class GetPostHome {
 		SerenityRest.when().get("https://reqres.in/api/users/2").then().assertThat().statusCode(200);
 		
 		SerenityRest.lastResponse().prettyPeek();
-		
+		System.out.println(".................");
+		System.out.println(baseUrl + " " + endpoint);
+		System.out.println(".................");
 		SerenityRest.given().contentType(CONTENT_TYPE).when().body(body).post(baseUrl.concat(endpoint));
 		
 		SerenityRest.lastResponse().prettyPeek();
-		
-		
+
 	}
 	
-	
+	public static void ValidarInformacion(String endpoint, DataTable user) {
+		
+	}
 	
 }

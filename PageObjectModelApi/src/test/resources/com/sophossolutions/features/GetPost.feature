@@ -6,7 +6,7 @@ Feature: Registrar usuario metodo post
 
   Scenario: Registrar con Post un usuario
     Given Quiero relizar un registro en la api "https://reqres.in/"
-    When Envio la informacion del usuario para el endpoint "/api/register"
+    When Envio la informacion del usuario para el endpoint "api/register"
       | email    | eve.holt@reqres.in |
       | password | pistol             |
     Then Valido que la respuesta tenga status 200

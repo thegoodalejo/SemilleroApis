@@ -27,8 +27,7 @@ public class GetPostStepDefinitions {
 
 	@Then("Valido que la respuesta tenga status {int}")
 	public void validoQueLaRespuestaTengaStatus(Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
 	}
 
 	
