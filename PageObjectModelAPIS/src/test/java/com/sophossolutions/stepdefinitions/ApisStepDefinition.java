@@ -20,7 +20,7 @@ public class ApisStepDefinition {
 
 	@Then("Valido que la respuesta tenga status {int} y tenga nombre {string} y apellido {string}")
 	public void validoQueLaRespuestaTengaStatusYTengaNombreYApellido(Integer codigoStatus, String nombre, String apellido) {
-	    
+	    GetUser.validarUsuario(codigoStatus, nombre, apellido);
 	}
 	
 }
