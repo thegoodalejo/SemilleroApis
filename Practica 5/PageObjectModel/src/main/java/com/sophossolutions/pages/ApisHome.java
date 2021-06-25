@@ -37,11 +37,7 @@ public class ApisHome extends PageObject{
 		when().body(body).post("https://reqres.in/api/register").
 		then().assertThat().statusCode(200);
 		SerenityRest.lastResponse().prettyPeek();
-		
-		
-
-		
-		
+			
 	}
 
 
